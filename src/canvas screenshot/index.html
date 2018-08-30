@@ -1,0 +1,35 @@
+<!Doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<div id="container">
+		<video id="video-container" autoplay playsinline></video>
+		<div id="errorMsg"></div>
+
+		<label for="resolution">Filter:</label>
+		<select id="resolution">
+			<option value="vga">VGA</option>
+			<option value="qvga">QVGA</option>
+			<option value="hd">HD</option>
+			<option value="fullHd">Full HD</option>
+			<option value="fourK">4K</option>
+			<option value="eightK">8k</option>
+		</select>
+
+		<label for="filter">Filter:</label>
+		<select id="filter">
+			<option value="none">None</option>
+			<option value="blur">Blur</option>
+			<option value="invert">Invert</option>
+			<option value="grayscale">Grayscale</option>
+			<option value="sepia">Sepia</option>
+		</select>
+		<button id="screenshot-button">Take  screenshot</button>
+		<div id="canvas-container"></div>
+	</div>
+	<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
